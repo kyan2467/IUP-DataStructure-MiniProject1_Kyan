@@ -32,7 +32,7 @@ int main(){
 
         else if(n==3){
             if(df<=dr) printf("Urgent: %s\n",deque[df++]);
-            else if(front<=rear) printf("Normal: %s\n",queue[front++]);
+            else if(front<=rear) printf("Lakuin: %s\n",queue[front++]);
             else printf("No tasks\n");
         }
 
