@@ -18,16 +18,16 @@ int main(){
             printf("Task: ");
             fgets(task,50,stdin);
             task[strcspn(task,"\n")]=0;
-            strcpy(queue[++rear],task);     // queue
-            strcpy(stack[++top],task);      // stack
+            strcpy(queue[++rear],task);    
+            strcpy(stack[++top],task);     
         }
 
         else if(c==2){
             printf("Urgent: ");
             fgets(task,50,stdin);
             task[strcspn(task,"\n")]=0;
-            strcpy(deque[++dr],task);       // deque
-            strcpy(stack[++top],task);      // stack
+            strcpy(deque[++dr],task);       
+            strcpy(stack[++top],task);     
         }
 
         else if(c==3){
