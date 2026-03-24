@@ -28,22 +28,10 @@ The deque (double-ended queue) is used to manage urgent tasks. Unlike a regular 
 
 ## Program Features
 
-* Add normal task
-* Add urgent task
-* Process tasks
+* Lakuin task
+* urgent task
+* Kerjain tasks
 * Undo last action
 * Display tasks
 
-## How to Run
 
-1. Compile the program
-
-g++ main.cpp -o program
-
-2. Run the program
-
-./program
-
-## Course
-
-Data Structures – IUP ITS
