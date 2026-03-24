@@ -7,14 +7,14 @@ char stack[MAX][50], queue[MAX][50], deque[MAX][50];
 int top=-1, front=0, rear=-1, df=0, dr=-1;
 
 int main(){
-    int c;
+    int n;
     char task[50];
 
     while(1){
         printf("1.Lakuin 2.Urgent 3.Kerjain 4.Undo 5.Keluar\n");
-        scanf("%d",&c); getchar();
+        scanf("%d",&n); getchar();
 
-        if(c==1){
+        if(n==1){
             printf("Task: ");
             fgets(task,50,stdin);
             task[strcspn(task,"\n")]=0;
@@ -22,7 +22,7 @@ int main(){
             strcpy(stack[++top],task);     
         }
 
-        else if(c==2){
+        else if(n==2){
             printf("Urgent: ");
             fgets(task,50,stdin);
             task[strcspn(task,"\n")]=0;
@@ -30,16 +30,16 @@ int main(){
             strcpy(stack[++top],task);     
         }
 
-        else if(c==3){
+        else if(n==3){
             if(df<=dr) printf("Urgent: %s\n",deque[df++]);
             else if(front<=rear) printf("Normal: %s\n",queue[front++]);
             else printf("No tasks\n");
         }
 
-        else if(c==4){
+        else if(n==4){
             if(top>=0) printf("Undo: %s\n",stack[top--]);
         }
 
-        else if(c==5) break;
+        else if(n==5) break;
     }
 }
